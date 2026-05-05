@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torchmetrics.functional import structural_similarity_index_measure
-from model import FDCFormer
+from model import FDSA
 from losses import CombinedLoss
 from dataloader import create_dataloaders
 import lpips
@@ -249,14 +249,9 @@ def main():
         }
         save_checkpoint(checkpoint_state, filename='latest_checkpoint.pth')
 
-        if epoch % 30 == 0 and epoch > 100:
-            # torch.save(model.state_dict(), f'modelv12.17.15_Huawei_Batch2_1000eps_lr0.0001_{epoch}.pth')
-            torch.save(model.state_dict(), f'modelv4.1_Huawei_Batch8_500eps_lr0.0002_{epoch}.pth')
-
         if avg_psnr > best_psnr:
             best_psnr = avg_psnr
-            # torch.save(model.state_dict(), 'modelv12.17.15_Huawei_Batch8_1000eps_lr0.0002.pth')
-            torch.save(model.state_dict(), 'modelv4.1_Huawei_Batch8_500eps_lr0.0002.pth')
+            torch.save(model.state_dict(), 'best_model.pth')
             print(f'Saving model with PSNR: {best_psnr:.6f}')
 
 
