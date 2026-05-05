@@ -6,8 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torchmetrics.functional import structural_similarity_index_measure
-# from modelv12 import FDCFormer
-from modelv4 import FDCFormer
+from model import FDCFormer
 from losses import CombinedLoss
 from dataloader import create_dataloaders
 import lpips
@@ -127,52 +126,34 @@ def get_grad_norm(model):
             total_norm += param_norm.item() ** 2
     return total_norm ** 0.5
 
-
 def save_checkpoint(state, filename='checkpoint.pth.tar'):
-    """[新增] 保存完整训练状态的辅助函数"""
     torch.save(state, filename)
-
 
 class Logger(object):
     def __init__(self, filename="Default.log"):
         self.terminal = sys.stdout
-        self.log = open(filename, "a")  # "a" 表示追加模式
+        self.log = open(filename, "a") 
 
     def write(self, message):
-        self.terminal.write(message)    # 往屏幕打印
-        self.log.write(message)         # 往文件写入
-        self.log.flush()                # 立即写入，防止缓存
+        self.terminal.write(message)    
+        self.log.write(message)         
+        self.log.flush()               
 
     def flush(self):
         self.log.flush()
 
 
 def main():
-    # 这会将所有的 print 输出同时重定向到 training_log.txt 文件中
     sys.stdout = Logger("training_log7.txt")
     print(f"Log file created at: {os.path.abspath('training_log7.txt')}")
-    # ----------------
-    # Hyperparameters
-    # train_low = 'data/LOLv1/Train/input'
-    # train_high = 'data/LOLv1/Train/target'
-    # test_low = 'data/LOLv1/Test/input'
-    # test_high = 'data/LOLv1/Test/target'
-    # train_low = 'data/LOLv2/Real_captured/Train/Low'
-    # train_high = 'data/LOLv2/Real_captured/Train/Normal'
-    # test_low = 'data/LOLv2/Real_captured/Test/Low'
-    # test_high = 'data/LOLv2/Real_captured/Test/Normal'
-    # train_low = 'data/LOLv2/Synthetic/Train/Low'
-    # train_high = 'data/LOLv2/Synthetic/Train/Normal'
-    # test_low = 'data/LOLv2/Synthetic/Test/Low'
-    # test_high = 'data/LOLv2/Synthetic/Test/Normal'
-    # train_low = 'data/Huawei/Train/low'
-    # train_high = 'data/Huawei/Train/high'
-    train_low = 'data/Huawei/Train/low'
-    train_high = 'data/Huawei/Train/high'
-    test_low = 'data/Huawei/Train/low'
-    test_high = 'data/Huawei/Train/high'
+    
+    train_low = 'data/LOLv1/Train/input'
+    train_high = 'data/LOLv1/Train/target'
+    test_low = 'data/LOLv1/Test/input'
+    test_high = 'data/LOLv1/Test/target'
+   
     learning_rate = 2e-4
-    num_epochs = 500
+    num_epochs = 3000
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     resume_path = 'latest_checkpoint6.pth'  # 恢复训练
