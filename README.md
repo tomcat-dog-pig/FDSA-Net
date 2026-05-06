@@ -32,7 +32,11 @@ data/
 │       └── target/
 ```
 ## Train
-
-
+make sure your datasets are correctly placed and run:
+python train.py
 
 ## Test
+python test.py --weights ./checkpoints/best_model.pth --test_dir ./dataset/LOLv1/Test/input/
+
+## Inference
+test result on LOLv1&LOLv2
