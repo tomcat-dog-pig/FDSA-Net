@@ -30,9 +30,9 @@ data/
 │   └── Test/
 │       ├── input/
 │       └── target/
-```text
+
 ## Train
-make sure your datasets are correctly placed and run:
+
 
 
 ## Test
