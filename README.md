@@ -13,10 +13,6 @@
 *   Other dependencies: `pip install -r requirements.txt`
 
 ## Dataset Preparation
-Please download the standard low-light enhancement datasets:
-*   **LOL-v1**: [Download Link]
-*   **LOL-v2**: [Download Link]
-
 Organize the datasets in the following structure for `dataloader.py`:
 ```text
 data/
