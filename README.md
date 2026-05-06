@@ -19,11 +19,18 @@ Please download the standard low-light enhancement datasets:
 
 Organize the datasets in the following structure for `dataloader.py`:
 ```text
-dataset/
+data/
 ├── LOLv1/
 │   ├── Train/
-│   │   ├── low/
-│   │   └── high/
+│   │   ├── input/
+│   │   └── target/
 │   └── Test/
-│       ├── low/
-│       └── high/
+│       ├── input/
+│       └── target/
+├── LOLv2/
+│   ├── Train/
+│   │   ├── input/
+│   │   └── target/
+│   └── Test/
+│       ├── input/
+│       └── target/
