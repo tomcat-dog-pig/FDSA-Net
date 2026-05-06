@@ -3,7 +3,7 @@
 # FDSA-Net: A frequency-guided dynamic sparse attention network with dual-domain fusion for low-light image enhancement
 
 ## Overview
-<img src="figures/network.png" width="800">
+<img src="figures/network.png" width="700">
 
 ## Environment Setup
 *   Python 3.8+
