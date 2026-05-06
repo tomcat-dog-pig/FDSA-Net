@@ -8,7 +8,7 @@ Low‑light image enhancement remains a critical task in computer vision and vis
 
 ## Overview
 ![Architecture](figures/network.pdf) 
-*(Note: Please upload your FDSA-Net architecture diagram to the `figures` folder and name it `architecture.png`)*
+
 
 ## Environment Setup
 *   Python 3.8+
