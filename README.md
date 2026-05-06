@@ -33,6 +33,7 @@ data/
 ```
 ## Train
 make sure your datasets are correctly placed and run:
+```bash
 python train.py
 
 ## Test
