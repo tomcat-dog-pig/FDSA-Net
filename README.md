@@ -43,4 +43,4 @@ python test.py --weights ./checkpoints/best_model.pth --test_dir ./dataset/LOLv1
 ## Inference
 test result on LOLv1&LOLv2
 
-<img src="figures/result_LOLv1.png" width="800">
+<img src="figures/result_LOLv1.png" width="500">
