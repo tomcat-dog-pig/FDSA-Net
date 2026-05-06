@@ -1,7 +1,7 @@
 
 
-# FDSA-Net: A frequency-guided dynamic sparse attention network with dual-domain fusion for low-light image enhancement
-
+# Dual‑Domain Adaptive Fusion with Dynamic Sparse Attention for Low‑Light Image Enhancement
+This repository contains the official PyTorch implementation for the manuscript submitted to The Visual Computer.
 ## Overview
 <img src="figures/network.png" width="700">
 
