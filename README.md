@@ -35,10 +35,11 @@ data/
 make sure your datasets are correctly placed and run:
 ```bash
 python train.py
-
+```
 ## Test
+```bash
 python test.py --weights ./checkpoints/best_model.pth --test_dir ./dataset/LOLv1/Test/input/
-
+```
 ## Inference
 test result on LOLv1&LOLv2
 ![Architecture](figures/result_LOLv1.png) 
