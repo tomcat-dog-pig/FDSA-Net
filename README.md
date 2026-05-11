@@ -12,7 +12,7 @@ This repository contains the official PyTorch implementation for the manuscript 
 *   Other dependencies: `pip install -r requirements.txt`
 
 ## Dataset Preparation
-We evaluate our FDSA-Net on several widely used low-light image enhancement datasets. You can download the datasets from their official websites:
+We evaluate our FDSA-Net on several widely used low-light image enhancement datasets. You can download the datasets from their official websites and put them in data:
 
 * **LOL Dataset (LOL-v1 & LOL-v2):** [Official BMVC 2018 Website](https://daooshee.github.io/BMVC2018website)
   
