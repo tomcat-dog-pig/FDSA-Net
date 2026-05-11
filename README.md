@@ -3,7 +3,7 @@
 # Dual‑Domain Adaptive Fusion with Dynamic Sparse Attention for Low‑Light Image Enhancement
 This repository contains the official PyTorch implementation for the manuscript submitted to The Visual Computer.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20123628.svg)](https://doi.org/10.5281/zenodo.20123628)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20123628-blue.svg)](https://doi.org/10.5281/zenodo.20123628)
 
 ## Overview
 <img src="figures/network.png" width="700">
