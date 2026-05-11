@@ -41,7 +41,7 @@ python train.py
 ```
 ## Test
 ```bash
-python test.py --weights ./checkpoints/best_model.pth --test_dir ./dataset/LOLv1/Test/input/
+python test.py 
 ```
 ## Inference
 test result on LOLv1&LOLv2
