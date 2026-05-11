@@ -49,9 +49,9 @@ test result on LOLv1&LOLv2
 <img src="figures/result_LOLv1.png" width="500">
 <img src="figures/result_LOLv2.png" width="500">
 
-## 📝 Citation
+## Citation
 
-If you find our code, datasets, or paper useful for your research, please consider citing our manuscript submitted to **The Visual Computer**:
+If you find our work is useful for your research, please consider citing our manuscript submitted to **The Visual Computer**:
 
 ```bibtex
 @article{zhou2026fdsanet,
