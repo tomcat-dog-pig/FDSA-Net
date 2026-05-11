@@ -49,4 +49,16 @@ test result on LOLv1&LOLv2
 <img src="figures/result_LOLv1.png" width="500">
 <img src="figures/result_LOLv2.png" width="500">
 
+## 📝 Citation
+
+If you find our code, datasets, or paper useful for your research, please consider citing our manuscript submitted to **The Visual Computer**:
+
+```bibtex
+@article{zhou2026fdsanet,
+  title={Dual-Domain Adaptive Fusion with Dynamic Sparse Attention for Low-Light Image Enhancement},
+  author={Zhou, Huaping and Chen, Hong and Sun, Kelei},
+  journal={The Visual Computer},
+  year={2026},
+  note={Under Review}
+}
 
